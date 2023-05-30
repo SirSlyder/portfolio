@@ -12,6 +12,7 @@ html {
     text-align: center;
     font-size: 72px;
     color:#FFFFFF;
+    line-height: 0;
 }
 
 .main h3{
@@ -27,14 +28,35 @@ html {
 }
 
 .container {
-    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    min-height: calc(100vh - 45px);
+    margin-top: 45px;
     /* align-self: center; */
-    background-image: url("src/assets/regularSmileLarge.png");
+    background-image: url("../../assets/regularSmileLargeBlack.png");
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 100%;
     background-position-x: center;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gameContainer {
+    position: relative;
+    color: white;
+    padding: 12px;
+}
+
+.gameContainer img {
+    max-width: 30vw;
+    max-height: 5vw;
+    transition: all 0.25s;
+    border-radius: 5px;
+}
+
+.gameContainer img:hover{
+    transform: scale(1.1, 1.1);
+    transition: all 0.25s;
 }
