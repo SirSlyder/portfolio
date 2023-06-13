@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -9,8 +10,13 @@ import { environment } from 'src/environments/environment';
 })
 export class SandboxComponent {
   constructor(private http: HttpClient){}
-  
-  ngOnInit() {
+
+  pingMessage: string = "";
+
+  ngOnInit(){
+    this.pingSandbox();
+  }
+  pingSandbox(): void {
     const headerDict = {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
@@ -22,7 +28,7 @@ export class SandboxComponent {
 
     this.http.get<any>(environment.API_URI + '/ping-sandbox', requestOptions).subscribe({
         next: data => {
-            console.log(data);
+            this.pingMessage = data.body;
         },
         error: error => {
             console.error('There was an error!', error);
