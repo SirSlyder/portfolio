@@ -5,6 +5,7 @@ import { GamesComponent } from './games-page/games.component';
 import { SevenFavoursComponent } from './games/seven-favours/seven-favours.component';
 import { BuddyComponent } from './games/buddy/buddy.component';
 import { SecurityRoomComponent } from './games/security-room/security-room.component';
+import { SandboxComponent } from './sandbox/sandbox.component';
 
 const routes: Routes = [
   { 
@@ -39,6 +40,11 @@ const routes: Routes = [
             component: SecurityRoomComponent
           }
         ]
+      },
+      {
+        path: 'sandbox',
+        title: 'Sandbox',
+        component: SandboxComponent
       }
     ] 
   }
