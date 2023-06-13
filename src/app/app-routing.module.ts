@@ -12,10 +12,12 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        title: "Leif Kemp's Portfolio",
         component: HomeComponent
       },
       {
         path: 'games-list',
+        title: 'My Games',
         component: GamesComponent
       },
       {
@@ -23,14 +25,17 @@ const routes: Routes = [
         children: [
           {
             path: 'seven-favours',
+            title: 'Seven Favors',
             component: SevenFavoursComponent
           },
           {
             path: 'buddy',
+            title: 'Buddy',
             component: BuddyComponent
           },
           {
             path: 'security-room',
+            title: 'The Security Room',
             component: SecurityRoomComponent
           }
         ]
