@@ -5,6 +5,7 @@ html, body {
 }
 
 .main {
+    position: relative;
     text-align: center;
     color: #FFFFFF;
 }
@@ -36,15 +37,8 @@ html, body {
 .container {
     display: flex;
     flex-flow: column;
-    min-height: calc(100vh - 45px);
-    margin-top: 45px;
-    background-image: url("../../../assets/security-room/background_blurred.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-color: #383838;
+    min-height: calc(100vh - 40px);
+    margin-top: 40px;
 }
 
 .main a {
