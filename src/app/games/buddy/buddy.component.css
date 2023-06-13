@@ -49,39 +49,6 @@ html, body {
     background-position-x: center;
     background-color: #383838;
 }
-.screenshot {
-    width: 100%;
-    align-items: center;
-    display: flex;
-}
-
-.screenshothalf {
-    width: 50%;
-    height: 100%;
-}
-
-.screenshothalf span{
-    font-size: 24px;
-    vertical-align: middle;
-    text-align: right;
-    float: right;
-    padding-right: 25px;
-}
-
-.screenshothalf img{
-    display: block;
-    padding: 25px;
-    max-width: 32vw;
-    max-height: 18vw;
-}
-
-.screenshothalf iframe{
-    margin-left: 25px;
-    display: block;
-    width: 32vw;
-    height: 18vw;
-}
-
 
 .main a {
     color: red;

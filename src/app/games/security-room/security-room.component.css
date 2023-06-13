@@ -11,26 +11,26 @@ html, body {
 
 .main h1{
     text-align: center;
-    font-size: 72px;
+    font-size: 3vw;
     color:#FFFFFF;
 }
 
 .main h2{
     text-align: center;
-    font-size: 36px;
+    font-size: 1.5vw;
     color:#FFFFFF;
 }
 
 .main h3{
     text-align: center;
-    font-size: 24px;
+    font-size: 1vw;
     color:#FFFFFF;
 }
 
 .main p{
     text-align: center;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 1vw;
 }
 
 .container {
@@ -38,50 +38,14 @@ html, body {
     flex-flow: column;
     min-height: calc(100vh - 45px);
     margin-top: 45px;
-    /* min-height: 100vh; */
-    /* align-self: center; */
     background-image: url("../../../assets/security-room/background_blurred.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    /* background-size: 100%; */
     background-position-x: center;
     background-color: #383838;
 }
-.screenshot {
-    width: 100%;
-    align-items: center;
-    display: flex;
-}
-
-.screenshothalf {
-    width: 50%;
-    height: 100%;
-}
-
-.screenshothalf span{
-    font-size: 24px;
-    vertical-align: middle;
-    text-align: right;
-    float: right;
-    padding-right: 25px;
-}
-
-.screenshothalf img{
-    display: block;
-    padding: 25px;
-    max-width: 32vw;
-    max-height: 18vw;
-}
-
-.screenshothalf iframe{
-    margin-left: 25px;
-    display: block;
-    width: 32vw;
-    height: 18vw;
-}
-
 
 .main a {
     color: red;

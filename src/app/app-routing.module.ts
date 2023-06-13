@@ -15,8 +15,11 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
+        path: 'games-list',
+        component: GamesComponent
+      },
+      {
         path: 'games',
-        component: GamesComponent,
         children: [
           {
             path: 'seven-favours',
