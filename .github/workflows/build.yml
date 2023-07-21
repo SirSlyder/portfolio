@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: NG Build
-        run: ng build --base-href=/portfolio/
+        run: npm run build:prod
