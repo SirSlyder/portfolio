@@ -1,0 +1,12 @@
+html, body {
+  height:100%;
+}
+
+body {
+  height: 100%;
+  /* align-self: center; */
+  background-image: url("src/assets/regularSmile.png");
+  
+  background-position: center;
+  background-attachment: fixed;
+}
