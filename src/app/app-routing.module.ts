@@ -9,6 +9,7 @@ import { SandboxComponent } from './sandbox/sandbox.component';
 import { SlaughterLandsComponent } from './games/slaughter-lands/slaughter-lands.component';
 import { CyberblazeComponent } from './games/cyberblaze/cyberblaze.component';
 import { FumblingWizardComponent } from './games/fumbling-wizard/fumbling-wizard.component';
+import { GoobersComponent } from './games/goobers/goobers.component';
 
 const routes: Routes = [
   { 
@@ -56,6 +57,11 @@ const routes: Routes = [
             path: 'fumbling-wizard',
             title: 'The Fumbling Wizard',
             component: FumblingWizardComponent
+          },
+          {
+            path: 'goobers',
+            title: 'Goobers',
+            component: GoobersComponent
           }
         ]
       },

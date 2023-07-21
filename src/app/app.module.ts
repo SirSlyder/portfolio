@@ -15,6 +15,7 @@ import { SandboxComponent } from './sandbox/sandbox.component';
 import { SlaughterLandsComponent } from './games/slaughter-lands/slaughter-lands.component';
 import { CyberblazeComponent } from './games/cyberblaze/cyberblaze.component';
 import { FumblingWizardComponent } from './games/fumbling-wizard/fumbling-wizard.component';
+import { GoobersComponent } from './games/goobers/goobers.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FumblingWizardComponent } from './games/fumbling-wizard/fumbling-wizard
     CyberblazeComponent,
     FumblingWizardComponent,
     SlaughterLandsComponent,
+    GoobersComponent,
     SandboxComponent
   ],
   imports: [
