@@ -7,8 +7,12 @@ on:
 
 jobs:
   build:
-    name: Build website
+    
     runs-on: ubuntu-latest
     steps:
-      - name: NG Build
-        run: echo Still figuring out!
+      - name: Checkout
+      uses: actions/checkout@v1
+      
+      - name: Install and build website
+        working-directory: ./
+        run: npm install && npm run build:prod
