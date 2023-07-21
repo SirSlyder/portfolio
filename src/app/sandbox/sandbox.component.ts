@@ -32,6 +32,7 @@ export class SandboxComponent {
         },
         error: error => {
             console.error('There was an error!', error);
+            this.pingMessage = "There was an error."
         }
     })  
   }

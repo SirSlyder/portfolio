@@ -6,6 +6,8 @@ import { SevenFavoursComponent } from './games/seven-favours/seven-favours.compo
 import { BuddyComponent } from './games/buddy/buddy.component';
 import { SecurityRoomComponent } from './games/security-room/security-room.component';
 import { SandboxComponent } from './sandbox/sandbox.component';
+import { SlaughterLandsComponent } from './games/slaughter-lands/slaughter-lands.component';
+import { CyberblazeComponent } from './games/cyberblaze/cyberblaze.component';
 
 const routes: Routes = [
   { 
@@ -38,6 +40,16 @@ const routes: Routes = [
             path: 'security-room',
             title: 'The Security Room',
             component: SecurityRoomComponent
+          },
+          {
+            path: 'slaughter-lands',
+            title: 'Slaughter Lands',
+            component: SlaughterLandsComponent
+          },
+          {
+            path: 'cyberblaze',
+            title: 'Cyberblaze',
+            component: CyberblazeComponent
           }
         ]
       },

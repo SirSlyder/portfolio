@@ -12,6 +12,8 @@ import { SevenFavoursComponent } from './games/seven-favours/seven-favours.compo
 import { BuddyComponent } from './games/buddy/buddy.component';
 import { SecurityRoomComponent } from './games/security-room/security-room.component';
 import { SandboxComponent } from './sandbox/sandbox.component';
+import { SlaughterLandsComponent } from './games/slaughter-lands/slaughter-lands.component';
+import { CyberblazeComponent } from './games/cyberblaze/cyberblaze.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { SandboxComponent } from './sandbox/sandbox.component';
     SevenFavoursComponent,
     BuddyComponent,
     SecurityRoomComponent,
+    CyberblazeComponent,
+    SlaughterLandsComponent,
     SandboxComponent
   ],
   imports: [
