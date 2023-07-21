@@ -6,13 +6,12 @@ on:
       - 'master'
 
 jobs:
-  build:
-    
+  build: 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-      uses: actions/checkout@v1
-      
+        uses: actions/checkout@v1
+
       - name: Install and build website
         working-directory: ./
         run: npm install && npm run build:prod
