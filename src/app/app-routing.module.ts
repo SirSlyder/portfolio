@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, provideRouter, withComponentInputBinding } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { GamesComponent } from './games-page/games.component';
 import { SevenFavoursComponent } from './games/seven-favours/seven-favours.component';
@@ -10,6 +10,7 @@ import { SlaughterLandsComponent } from './games/slaughter-lands/slaughter-lands
 import { CyberblazeComponent } from './games/cyberblaze/cyberblaze.component';
 import { FumblingWizardComponent } from './games/fumbling-wizard/fumbling-wizard.component';
 import { GoobersComponent } from './games/goobers/goobers.component';
+import { BlogsComponent } from './blogs-page/blogs.component';
 
 const routes: Routes = [
   { 
@@ -69,6 +70,11 @@ const routes: Routes = [
         path: 'sandbox',
         title: 'Sandbox',
         component: SandboxComponent
+      },
+      {
+        path: 'blogs',
+        title: 'Blogs',
+        component: BlogsComponent
       }
     ] 
   }
@@ -76,6 +82,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [provideRouter(routes, withComponentInputBinding())]
 })
 export class AppRoutingModule { }

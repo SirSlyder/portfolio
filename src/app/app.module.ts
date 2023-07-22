@@ -16,6 +16,8 @@ import { SlaughterLandsComponent } from './games/slaughter-lands/slaughter-lands
 import { CyberblazeComponent } from './games/cyberblaze/cyberblaze.component';
 import { FumblingWizardComponent } from './games/fumbling-wizard/fumbling-wizard.component';
 import { GoobersComponent } from './games/goobers/goobers.component';
+import { BlogsComponent } from './blogs-page/blogs.component';
+import { provideRouter } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { GoobersComponent } from './games/goobers/goobers.component';
     HomeComponent,
     BuddyBackgroundComponent,
     GamesComponent,
+    BlogsComponent,
     SevenFavoursComponent,
     BuddyComponent,
     SecurityRoomComponent,
