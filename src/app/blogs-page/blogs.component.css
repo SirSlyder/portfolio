@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    background-color: black;
+}
+
+.main {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main h1{
+    text-align: center;
+    font-size: 72px;
+    color:#FFFFFF;
+    line-height: 0;
+    padding-bottom: 50px;
+}
+
+.main h3{
+    text-align: center;
+    font-size: 24px;
+    color:#FFFFFF;
+}
+
+.main p{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+/* .container:after{
+    content: '';
+    background-image: url("../../assets/regularSmileLargeBlack.png");
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+} */
+
+.container {
+    display: flex;
+    flex-flow: column;
+    min-height: calc(100vh - 40px);
+    margin-top: 40px;
+    /* align-self: center; */
+    
+    /* background-color: rgba(0, 0, 0, 1); */
+}
+
+.gameContainer {
+    position: relative;
+    color: white;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameContainer img {
+    max-width: 30vw;
+    max-height: 5vw;
+    transition: all 0.25s;
+    border-radius: 5px;
+    /* padding-left: 50px; */
+    margin-left: 50px;
+}
+
+.gameContainer p {
+    width: 10vw;
+    font-size: 24px;
+}
+
+.gameContainer img:hover{
+    transform: scale(1.1, 1.1);
+    transition: all 0.25s;
+}
+
+.vertical-line {
+    border-left: 5px solid white;
+    height: calc(5vw - 12px);
+    position: absolute;
+    transform: translate(calc(-15vw - 25px), calc(5vh + 15px));
+}
