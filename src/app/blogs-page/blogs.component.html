@@ -11,11 +11,10 @@
 
                 <br />
 
-                <li *ngFor="let item of testFunction()">
+                <li *ngFor="let index of createBlogRange()">
                     <div class = "gameContainer">
-                        <p>In Development</p>
-                        <a routerLink="/">{{item}}</a>
-                        <!-- <img src = "assets/security-room/button_text.png" (click)="goToLink('/games/security-room')"> -->
+                        <p>Blog #{{ index+1 }}</p>
+                        <a [routerLink]="['/blogs', index]">{{ blogHeadings[index] }}</a>
                         <div class="vertical-line"></div>
                     </div>
                 </li>
@@ -23,42 +22,6 @@
                     <p>In Development</p>
                     <img src = "assets/security-room/button_text.png" (click)="goToLink('/games/security-room')">
                     <div class="vertical-line"></div>
-                </div>
-
-                <div class = "gameContainer">
-                    <p>2023</p>
-                    <img src = "assets/seven-favours/button_text.png" (click)="goToLink('/games/seven-favours')">
-                    <div class="vertical-line"></div>
-                </div>
-
-                <div class = "gameContainer">
-                    <p>2022</p>
-                    <img src = "assets/fumbling-wizard/button_text.png" (click)="goToLink('/games/fumbling-wizard')">
-                    <div class="vertical-line"></div>
-                </div>
-
-                <div class = "gameContainer">
-                    <p>2021</p>
-                    <img src = "assets/goobers/button_text.png" (click)="goToLink('/games/goobers')">
-                    <div class="vertical-line"></div>
-                </div>
-
-                <div class = "gameContainer">
-                    <p>2020</p>
-                    <img src = "assets/cyberblaze/button_text.png" (click)="goToLink('/games/cyberblaze')">
-                    <div class="vertical-line"></div>
-                </div>
-
-                <div class = "gameContainer">
-                    <p>2019</p>
-                    <img src = "assets/buddy/button_text.png" (click)="goToLink('/games/buddy')">
-                    <div class="vertical-line"></div>
-                </div>
-
-                <div class = "gameContainer">
-                    <p>2016</p>
-                    <img src = "assets/slaughter-lands/button_text.png" (click)="goToLink('/games/slaughter-lands')">
-                    <!-- <div class="vertical-line"></div> -->
                 </div>
             </div> 
         </div>

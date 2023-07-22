@@ -74,7 +74,12 @@ const routes: Routes = [
       {
         path: 'blogs',
         title: 'Blogs',
-        component: BlogsComponent
+        component: BlogsComponent,
+      },
+      {
+        path: 'blogs/:index',
+        title: 'Blog',
+        component: GoobersComponent
       }
     ] 
   }
