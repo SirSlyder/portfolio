@@ -64,7 +64,8 @@ html, body {
     max-height: 5vw;
     transition: all 0.25s;
     border-radius: 5px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
+    margin-left: 50px;
 }
 
 .gameContainer p {
