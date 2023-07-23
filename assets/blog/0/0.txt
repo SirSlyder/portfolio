@@ -1,0 +1,30 @@
+First blog!
+This special first entry is going to delve into just how painful it was to actually create this blog system I use.
+I find it kind of cool though :)
+
+I've been writing this website throughout the downtime of my industrial placement as part of my course, and I'm really happy with it.
+And I decided 'why not add a blog? make this a bit more personal, you know' and so I thought why not and tried my hand at it.
+
+The first thing I wanted to avoid was just creating new Angular components for each entry I write, which makes it incredibly hard to scale with the increasing number of blogs.
+It also makes things just so much more bloated, so my main goal was to have it be limited to just 1 singular component, but then the difficult part came... how does it render different blogs?
+
+There are probably more elegant solutions than what I picked, but hey ho, live and learn! The system may get more refined as the blog process carries on, this is a snapshot of how it's written now.
+
+You've likely come to this blog via the Blog page, which lists all of the blogs in the order in which they were written.
+This page retrieves a list of existing blogs via a JSON file, which contains all of the headings I want to give, which may be shortened specifically for that page.
+However, this is a bit of a pain because it means to add a new entry, I must manually add a new heading into this JSON file.
+But I couldn't unfortunately find a more elegant way to read from multiple files at once and then build the page from there, so I've settled for this compromise.
+The blog landing page assigns the blog's index to the button, which is fed into the URL, this allows the blog component (the thing you're reading now) to retrieve the specific files it needs.
+
+A blog on this page consists of 2 files, a JSON file which contains certain properties (title, subtitle, date created), and a text file, which is the actual blog content.
+I picked a text file because it allows more readability on my end when I write these things, as if it were written in JSON this blog would be contined ENTIRELY within one line.
+And we wouldn't want that.
+
+And even more fun than trying to figure out how all that worked? Was trying to figure out how images should work!
+Once again I wanted to use files to be able to programmatically add images to a blog, and adjust things like the size, position etc.
+This went through several iterations mostly revolving around trying to integrate the code and variables into the HTML, which just didn't work.
+But then a realisation hit me, if I create a div inside of the image container (which for this blog is the left hand side of the screen) and slap an ID on it, I can create the images in the code itself!
+Once I realised this it actually became rather embarrassingly trivial to iterate through the JSON file and its image properties to create new images and tweak them based on the file.
+
+This blogging process overall took approximately 4 hours of work to accomplish, and I'm mostly satisfied with it! 
+It works on PC displays just fine, which is what I'm aiming for as a first project, just don't view it on mobile, 'kay?

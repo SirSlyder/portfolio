@@ -1,0 +1,16 @@
+{
+    "heading": "The pain of actually writing this blog.",
+    "subheading" : "I don't really know what I'm doing.",
+    "date": "23rd June, 2023",
+    "images": {
+        "0": {
+            "width": "30%",
+            "left": "15%",
+            "top": "84vh"
+        }, "1": {
+            "width": "20%",
+            "left": "20%",
+            "top": "21vh"
+        }
+    }
+}
