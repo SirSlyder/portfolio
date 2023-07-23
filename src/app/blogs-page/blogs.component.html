@@ -5,24 +5,20 @@
         </div>
         <div class="main">
             <div class="container">
-                <h1>My Portfolio of Games</h1>
-                <h3 style="line-height: 0;">All of my games have been developed in the Unity engine.</h3>
-                <h3 style="line-height: 0;">Click any of the buttons below to be taken to the related game's page.</h3>
+                <h1>My Blog!</h1>
+                <h3 style="line-height: 0;">Insert inane rambling here.</h3>
 
                 <br />
 
-                <li *ngFor="let index of createBlogRange()">
-                    <div class = "gameContainer">
-                        <p>Blog #{{ index+1 }}</p>
-                        <a [routerLink]="['/blogs', index]">{{ blogHeadings[index] }}</a>
-                        <div class="vertical-line"></div>
-                    </div>
-                </li>
-                <div class = "gameContainer">
-                    <p>In Development</p>
-                    <img src = "assets/security-room/button_text.png" (click)="goToLink('/games/security-room')">
-                    <div class="vertical-line"></div>
-                </div>
+                <ol>
+                    <li *ngFor="let index of blogHeadings">
+                        <div class = "blogContainer">
+                            <pre><p>Blog #{{ blogIndex(index)+1 }}</p></pre>
+                            <a [routerLink]="['/blogs', blogIndex(index)]">{{ index }}</a>
+                            <div class="vertical-line" *ngIf="blogIndex(index) != 0"></div>
+                        </div>
+                    </li>
+                </ol>
             </div> 
         </div>
     </body>

@@ -25,7 +25,8 @@ export class BlogsComponent {
         console.log(data);
         var obj = JSON.parse(data);
         console.log(obj.blogs);
-        this.headings.push(obj.blogs);
+        this.headings = obj.blogs;
+        this.headings.reverse();
       }
     );
   }
@@ -34,17 +35,22 @@ export class BlogsComponent {
     return this.headings;
   }
 
-  blogHeading(index: number) : String {
-    return this.headings[index];
+  blogIndex(heading: String) : number {
+    return (this.headings.length - 1) - this.headings.indexOf(heading);
   }
 
   testFunction(): string[] {
-    // return ["foo", "bar"]
-    // this.httpClient.get('assets/', {responseType: 'text'}).subscribe(data => console.log(data));
     return ["foo"]
   }
 
-  createBlogRange(): number[] {
-    return Array(this.headings.length).fill(this.headings.length - 1);
+  blogDate(index: number): String {
+    this.httpClient.get(`assets/blog/${index}/${index}.json`, {responseType: 'text'}).subscribe(
+      data => {
+        console.log(data);
+        var obj = JSON.parse(data);
+        return obj.date;
+      }
+    );
+    return "";
   }
 }

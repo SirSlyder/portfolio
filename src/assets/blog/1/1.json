@@ -1,0 +1,12 @@
+{
+    "heading": "This blog is designed to fail.",
+    "subheading": "Will it handle not being able to find the .txt file?",
+    "date": "23rd June, 2023",
+    "images": {
+        "0": {
+            "width": "45%",
+            "left": "2.5%",
+            "top": "35vh"
+        }
+    }
+}

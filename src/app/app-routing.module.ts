@@ -11,6 +11,7 @@ import { CyberblazeComponent } from './games/cyberblaze/cyberblaze.component';
 import { FumblingWizardComponent } from './games/fumbling-wizard/fumbling-wizard.component';
 import { GoobersComponent } from './games/goobers/goobers.component';
 import { BlogsComponent } from './blogs-page/blogs.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
   { 
@@ -79,7 +80,7 @@ const routes: Routes = [
       {
         path: 'blogs/:index',
         title: 'Blog',
-        component: GoobersComponent
+        component: BlogComponent
       }
     ] 
   }

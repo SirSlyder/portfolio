@@ -66,6 +66,7 @@ html, body {
     border-radius: 5px;
     /* padding-left: 50px; */
     margin-left: 50px;
+    filter: brightness(35%);
 }
 
 .gameContainer p {
@@ -76,6 +77,7 @@ html, body {
 .gameContainer img:hover{
     transform: scale(1.1, 1.1);
     transition: all 0.25s;
+    filter: brightness(100%);
 }
 
 .vertical-line {

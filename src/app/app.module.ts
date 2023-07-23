@@ -18,6 +18,7 @@ import { FumblingWizardComponent } from './games/fumbling-wizard/fumbling-wizard
 import { GoobersComponent } from './games/goobers/goobers.component';
 import { BlogsComponent } from './blogs-page/blogs.component';
 import { provideRouter } from '@angular/router';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { provideRouter } from '@angular/router';
     BuddyBackgroundComponent,
     GamesComponent,
     BlogsComponent,
+    BlogComponent,
     SevenFavoursComponent,
     BuddyComponent,
     SecurityRoomComponent,
