@@ -267,17 +267,21 @@
   }
 
   .links {
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 40vw;
-    transform: translate(-40%, -50%);
+    /* left: 0vw; */
+    width:60%;
+    transform: translate(-0%, -50%);
     height: 100%;
     align-items: center;
+    justify-content: center;
+    display: flex;
   }
 
   .links .link {
     position: relative;
     text-align: center;
+    
     background-color: #1062b4;
     float: left;
     text-decoration: none;
@@ -286,6 +290,11 @@
     margin-left: 2px;
     margin-right: 2px;
     min-width: 10vw;
+    /* transform: translate(-25vw, -0%); */
+  }
+
+  .links .dropdown{
+    /* transform: translate(-25vw, -0%); */
   }
 
   .links .link:hover, .dropdown:hover {
@@ -378,16 +387,46 @@
       visibility: hidden;
     }
   }
+
+  .toolbar_left {
+    display: flex;
+    justify-content: left;
+    width: 20%;
+    align-items: left;
+  }
+
+  .toolbar_left span{
+    text-align: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .toolbar_right {
+    display: flex;
+    justify-content: right;
+    width: 20%;
+    align-items: right;
+  }
+
+  .toolbar_right a svg{
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 </style>
 
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-  <img
+  <div class="toolbar_left">
+    <img
     width="40"
     alt="Angular Logo"
     src="assets/regularSmile.png"
-  />
-  <span>The Home of Leif Kemp</span>
+    />
+    <span>The Home of Leif Kemp</span>
+  </div>
+  
   <br>
     <div class="links">
       <a class="link" routerLink="">Home</a>
@@ -404,22 +443,24 @@
         </div>
       </div>
       <a class="link" routerLink="certifications">Certifications</a>
-      <a class="link" routerLink="sandbox">Sandbox</a>
+      <!-- <a class="link" routerLink="sandbox">Sandbox</a> -->
       <a class="link" routerLink="blogs">Blog</a>
     </div>
-    <div class="spacer"></div>
-    <a aria-label="Twitter" target="_blank" rel="noopener" href="https://twitter.com/sirslyder" title="Twitter">
-      <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-        <rect width="400" height="400" fill="none"/>
-        <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"/>
-      </svg>
-    </a>
-    <a aria-label="surr sloidah on YouTube" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCesiaNX8UuhVjYWF_gjiQ8w" title="YouTube">
-      <svg id="youtube-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
-        <path d="M0 0h24v24H0V0z" fill="none"/>
-        <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
-      </svg>
-    </a>
+    <!-- <div class="spacer"></div> -->
+    <div class="toolbar_right">
+      <a aria-label="Twitter" target="_blank" rel="noopener" href="https://twitter.com/sirslyder" title="Twitter">
+        <svg id="twitter-logo" height="25" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 -12 400 400">
+          <rect width="40" height="400" fill="none"/>
+          <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"/>
+        </svg>
+      </a>
+      <a aria-label="surr sloidah on YouTube" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCesiaNX8UuhVjYWF_gjiQ8w" title="YouTube">
+        <svg id="youtube-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" fill="#fff">
+          <path d="M0 0h24v24H0V0z" fill="none"/>
+          <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
+        </svg>
+      </a>
+    </div>
 </div>
 
 

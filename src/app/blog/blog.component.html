@@ -5,8 +5,8 @@
         </div>
         <div class="main">
             <div class="container">
-                <div class="image-holder" id="imageholder"></div>
-                <div class="text">
+                <div class="image-holder" id="imageholder" [ngStyle]="{'width': variable ? '100%' : '0%'}"></div>
+                <div class="text" [ngStyle]="{'width': variable ? '100%' : '80%'}">
                     <h1>{{ blogHeading }}</h1>
                     <h3>{{ blogSubtitle }}</h3>
                     <h3>{{ blogDate }}</h3>

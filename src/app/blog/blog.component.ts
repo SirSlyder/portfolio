@@ -13,6 +13,7 @@ export class BlogComponent implements OnInit{
   private httpClient : HttpClient;
   private blogData: any;
   private blog: String = "";
+  variable: boolean = true;
   constructor(private route: ActivatedRoute, private http: HttpClient){
     this.httpClient = http;
   }
@@ -30,6 +31,12 @@ export class BlogComponent implements OnInit{
         var obj = JSON.parse(data);
         this.blogData = obj;
         this.createImages();
+
+        if(!this.blogData.images){
+          this.variable = false;
+        } else {
+          this.variable = true;
+        }
       }
     );
   }

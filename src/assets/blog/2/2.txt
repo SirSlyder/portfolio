@@ -1,0 +1,16 @@
+Hello again!
+
+It's been a good while since I last worked on this site. A year and a half to be specific.
+Quite a bit has happened since then! I graduated university, and have been settling into my job.
+
+It's been an interesting time to say the least, at the time of writing I have been at work for approximately 4 and a half months, and since that time I've transitioned roles from software engineer to data engineer.
+The transition was rough and unexpected, but since overcoming the initial fear and daunting prospect of switching roles, things have fortunately gone very smoothly.
+I've been upskilled in Azure and Databricks, and put onto a project utilising them, which has been very nice, mostly running a lot of pipelines :P
+
+Certifications have also been an interesting thing to delve into, the Data and Cloud Computing fields in particular have tons of them, and getting them is an excellent way to display your skills and knowledge.
+Since transitioning to the data engineer role, I've obtained 5 certifications, 4 from Databricks, and 1 from Microsoft for Azure.
+
+And that's the crux of this blog post, after I spent today updating my CV (due to losing my previous one due to my hard drive bricking) and adding my certifications to them, I figured I'd create a page on this portfolio dedicated to them.
+This allows me to add a personal tracker on what I have obtained, with everything in one place, and allows people viewing this page to verify that I have in fact got the certifications in question, and that I'm not making things up.
+
+Going back to this portfolio website has been a bit of a breath of fresh air, going back to the good ol' webdev I started my foray into the industry with :)
