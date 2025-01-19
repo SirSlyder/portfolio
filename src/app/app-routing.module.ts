@@ -12,6 +12,7 @@ import { FumblingWizardComponent } from './games/fumbling-wizard/fumbling-wizard
 import { GoobersComponent } from './games/goobers/goobers.component';
 import { BlogsComponent } from './blogs-page/blogs.component';
 import { BlogComponent } from './blog/blog.component';
+import { CertificationsComponent } from './certifications/certifications.component';
 
 const routes: Routes = [
   { 
@@ -66,6 +67,11 @@ const routes: Routes = [
             component: GoobersComponent
           }
         ]
+      },
+      {
+        path: 'certifications',
+        title: 'Certifications',
+        component: CertificationsComponent
       },
       {
         path: 'sandbox',
