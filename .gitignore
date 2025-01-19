@@ -42,3 +42,9 @@ testem.log
 Thumbs.db
 
 src/environments/environment.ts
+*:Zone.Identifier
+docs/assets/buddy/2.png:Zone.Identifier
+docs/assets/buddy/1.png:Zone.Identifier
+src/assets/pfp_circular.png:Zone.Identifier
+src/assets/pfp_circular.png_Zone.Identifier
+*.Identifier
