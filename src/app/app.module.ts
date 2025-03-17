@@ -19,6 +19,7 @@ import { GoobersComponent } from './games/goobers/goobers.component';
 import { BlogsComponent } from './blogs-page/blogs.component';
 import { provideRouter } from '@angular/router';
 import { BlogComponent } from './blog/blog.component';
+import { BuddyPrivacyPolicyComponent } from './games/buddy_privacypolicy/buddy_privacypolicy.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { BlogComponent } from './blog/blog.component';
     BlogComponent,
     SevenFavoursComponent,
     BuddyComponent,
+    BuddyPrivacyPolicyComponent,
     SecurityRoomComponent,
     CyberblazeComponent,
     FumblingWizardComponent,

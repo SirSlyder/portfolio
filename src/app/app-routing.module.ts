@@ -13,6 +13,7 @@ import { GoobersComponent } from './games/goobers/goobers.component';
 import { BlogsComponent } from './blogs-page/blogs.component';
 import { BlogComponent } from './blog/blog.component';
 import { CertificationsComponent } from './certifications/certifications.component';
+import { BuddyPrivacyPolicyComponent } from './games/buddy_privacypolicy/buddy_privacypolicy.component';
 
 const routes: Routes = [
   { 
@@ -87,7 +88,17 @@ const routes: Routes = [
         path: 'blogs/:index',
         title: 'Blog',
         component: BlogComponent
-      }
+      },
+      {
+        path: 'privacy',
+        children: [
+          {
+            path: 'buddy',
+            title: 'Buddy - Android Privacy Policy',
+            component: BuddyPrivacyPolicyComponent
+          },
+        ]
+      },
     ] 
   }
 ];
