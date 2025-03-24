@@ -13,8 +13,6 @@ html, body {
     text-align: center;
     font-size: 72px;
     color:#FFFFFF;
-    line-height: 0;
-    padding-bottom: 50px;
 }
 
 .main h3{
@@ -85,4 +83,106 @@ html, body {
     height: calc(5vw - 12px);
     position: absolute;
     transform: translate(calc(-15vw - 25px), calc(5vh + 15px));
+}
+
+@media (orientation:portrait){
+    .container {
+        display: flex;
+        flex-flow: column;
+        min-height: calc(100vh - 40px);
+        margin-top: 40px;
+        /* align-self: center; */
+        
+        /* background-color: rgba(0, 0, 0, 1); */
+    }
+    
+    .gameContainer {
+        position: relative;
+        color: white;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
+    
+    .gameContainer img {
+        max-width: 80%;
+        max-height: 80%;
+        transition: all 0.25s;
+        border-radius: 5px;
+        /* padding-left: 50px; */
+        margin-left: 50px;
+        filter: brightness(100%);
+        margin: 0;
+    }
+    
+    .gameContainer p {
+        width: 50%;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .gameContainer img:hover{
+        transform: scale(1.1, 1.1);
+        transition: all 0.25s;
+        filter: brightness(100%);
+    }
+    
+    .vertical-line {
+        border-left: 5px solid white;
+        height: calc(5vw - 12px);
+        position: absolute;
+        transform: translate(calc(-15vw - 25px), calc(5vh + 15px));
+        visibility: hidden;
+    }
+}
+
+@media (orientation:landscape){
+    .container {
+        display: flex;
+        flex-flow: column;
+        min-height: calc(100vh - 40px);
+        margin-top: 40px;
+        /* align-self: center; */
+        
+        /* background-color: rgba(0, 0, 0, 1); */
+    }
+    
+    .gameContainer {
+        position: relative;
+        color: white;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .gameContainer img {
+        max-width: 30vw;
+        max-height: 5vw;
+        transition: all 0.25s;
+        border-radius: 5px;
+        /* padding-left: 50px; */
+        margin-left: 50px;
+        filter: brightness(35%);
+    }
+    
+    .gameContainer p {
+        width: 10vw;
+        font-size: 24px;
+    }
+    
+    .gameContainer img:hover{
+        transform: scale(1.1, 1.1);
+        transition: all 0.25s;
+        filter: brightness(100%);
+    }
+    
+    .vertical-line {
+        border-left: 5px solid white;
+        height: calc(5vw - 12px);
+        position: absolute;
+        transform: translate(calc(-15vw - 25px), calc(5vh + 15px));
+    }
 }

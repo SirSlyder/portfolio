@@ -1,0 +1,140 @@
+html, body {
+    height: 100%;
+    background-color: #5C5C5B;
+    margin: 0;
+}
+
+.main {
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.main h1{
+    text-align: center;
+    font-size: 72px;
+    color:#FFFFFF;
+    margin-bottom: 0;
+}
+
+.main h2{
+    text-align: center;
+    font-size: 36px;
+    color:#FFFFFF;
+}
+
+.main h3{
+    text-align: center;
+    font-size: 24px;
+    color:#FFFFFF;
+}
+
+.main p{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    min-height: calc(100vh - 40px);
+    margin-top: 40px;
+}
+
+.main a {
+    color: red;
+}
+
+@media (orientation:portrait){
+    .background {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        transform: translateY(-40px);
+    }
+    
+    .background img {
+        position: relative;
+        height: 100vh;
+        width: auto;
+    }
+
+    .screenshot {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .screenshothalf {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .screenshothalf span {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .screenshothalf img {
+        /* width: 100vw; */
+        /* position: relative; */
+        margin: 0;
+        width: 80vw;
+        height: auto;
+    }
+    
+    .screenshothalf iframe {
+        width: 80vw;
+        /* height: 80vw; */
+        aspect-ratio: 1.77777777778;
+        position: relative;
+        margin: 0;
+    }
+}
+
+@media (orientation:landscape){
+    .background {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        transform: translateY(-40px);
+    }
+    
+    .background img {
+        object-fit: cover;
+    }
+
+    .screenshothalf {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .screenshothalf span{
+        font-size: 24px;
+        vertical-align: middle;
+        text-align: right;
+        float: right;
+        padding-right: 25px;
+    }
+    
+    .screenshothalf img{
+        display: block;
+        padding: 25px;
+        max-width: 32vw;
+        max-height: 18vw;
+    }
+    
+    .screenshothalf iframe{
+        margin-left: 25px;
+        display: block;
+        width: 32vw;
+        height: 18vw;
+    }
+}
+
+

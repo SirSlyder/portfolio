@@ -59,3 +59,24 @@ html, body {
     margin: auto;
     text-align: left;
 }
+
+@media only screen and (max-width: 600px) {
+    .profile-picture {
+        visibility: hidden;
+        width: 0%;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+        margin-top: 10vh;
+    }
+
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .container h3 {
+        font-size: 28px;
+    }
+  }

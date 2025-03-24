@@ -359,40 +359,12 @@
     display: block;
   }
 
-  /* Responsive Styles */
-  @media screen and (max-width: 767px) {
-    .card-container > *:not(.circle-link) ,
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
-  }
-
   .toolbar_left {
     display: flex;
     justify-content: left;
     width: 20%;
     align-items: left;
+    visibility: visible;
   }
 
   .toolbar_left span{
@@ -413,6 +385,99 @@
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    .card-container > *:not(.circle-link) ,
+    .terminal {
+      width: 100%;
+    }
+
+    .card:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+
+    .toolbar_left {
+      visibility: hidden;
+      width: 0px;
+    }
+
+    .toolbar_right {
+      visibility: hidden;
+      width: 0px;
+    }
+
+    .links {
+      width: 100%;
+      margin: 0;
+    }
+
+    .links .link {
+      position: relative;
+      text-align: center;
+      width: 25%;
+      
+      background-color: #1062b4;
+      float: left;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 40px;
+      margin-left: 2px;
+      margin-right: 2px;
+      min-width: 10vw;
+      /* transform: translate(-25vw, -0%); */
+    }
+
+    .links .dropdown {
+      width: 25%;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+      display: none;
+      visibility: hidden;
+    }
+
+    .toolbar_left {
+      display: flex;
+      justify-content: left;
+      width: 0%;
+      align-items: left;
+      visibility: hidden;
+    }
+
+    .toolbar_left span{
+      text-align: center;
+      justify-content: center;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .toolbar_right {
+      display: flex;
+      justify-content: right;
+      width: 0%;
+      align-items: right;
+      visibility: hidden;
+    }
+
+    .toolbar_right a svg{
+      justify-content: center;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
   }
 </style>
 
