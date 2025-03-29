@@ -22,7 +22,9 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/static-pages/buddy_privacypolicy.html",
+              { "glob": "buddy_privacypolicy.html", "input": "src/app/static-pages/", "output": "/static/" }
             ],
             "styles": [
               "src/styles.css"
