@@ -137,6 +137,14 @@ html, body {
         transform: translate(calc(-15vw - 25px), calc(5vh + 15px));
         visibility: hidden;
     }
+
+    .vertical-line-connector {
+        border-left: 5px solid white;
+        height: calc(5vw - 12px);
+        position: absolute;
+        transform: translate(calc(-15vw - 25px), calc(5vh + 15px));
+        visibility: hidden;
+    }
 }
 
 @media (orientation:landscape){
@@ -185,5 +193,12 @@ html, body {
         height: calc(5vw - 12px);
         position: absolute;
         transform: translate(calc(-15vw - 25px), calc(5vh + 15px));
+    }
+
+    .vertical-line-connector {
+        border-left: 5px solid white;
+        height: calc(5vw);
+        position: absolute;
+        transform: translate(calc(-15vw - 25px), calc(5vh - 30px));
     }
 }
